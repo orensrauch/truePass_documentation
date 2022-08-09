@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/pace.min.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="assets/themify-icons/themify-icons.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.min.css" rel="stylesheet">
+    <link href="assets/css/github.min.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.min.css" rel="stylesheet">
+    <link href="assets/OwlCarousel2/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/OwlCarousel2/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>truePass Official Documentation</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+</head>
+
+<body>
+    <div class="loader">
+        <div class="top-search">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="ti-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search for snippets ......">
+                <span class="input-group-addon close-search"><i class="ti-close"></i></span>
+            </div>
+        </div>
+        <!-- /.End of Top Search -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" id="sidebarCollapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Docs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="documentation.html">Get Started</a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item search"><a href="#" class="nav-link"><i class="ti-search"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.End of Navbar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fa-solid fa-fingerprint"></i><span>true</span>Pass</h3>
+                <div class="dropdown version">
+                    <a class="ver-drop dropdown-toggle" href="#" role="button" id="versionDropdownMenu"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        v2.0.0
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="versionDropdownMenu">
+                        <div>Versions</div>
+                        <a class="dropdown-item active" href="#">latest</a>
+                        
+                    </div>
+                </div>
+                <div class="form-group has-search">
+                    <span class="ti-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search docs ...">
+                </div>
+                <!-- /.Actual search box -->
+
+                <!-- TODO - NAVBAR CATEGORIES ************************************************************************************************** -->
+            </div>
+            <ul class="metismenu sidebarMenu list-unstyled">
+                <li><a href="documentation.html">Documentation</a></li>
+                <li class="active">
+                    <a class="has-arrow" href="#" aria-expanded="true">1. Getting started</a>
+                    <ul aria-expanded="true">
+                        <li><a class="js-scroll-trigger" href="#installation">1.1 Installation</a></li>
+                        <li><a class="js-scroll-trigger" href="#certificates">1.2 Check Certificates</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">2. Admin Configurations</a>
+                    <ul aria-expanded="false">
+                        <li><a class="js-scroll-trigger" href="#services">2.1 Configure Services</a></li>
+                        <li><a class="js-scroll-trigger" href="#directory">2.1.1 Active Directory</a></li>
+                        <li><a class="js-scroll-trigger" href="#controller">2.1.2 Service Controller</a></li>
+                        <li><a class="js-scroll-trigger" href="#clientendpoint">2.1.3 Client Endpoint</a></li>
+                        <li><a class="js-scroll-trigger" href="#syslog">2.1.4 Syslog [optional]</a></li>
+                        <li><a class="js-scroll-trigger" href="#mfaoptional">2.1.5 MFA [optional]</a></li>
+                        <li><a class="js-scroll-trigger" href="#totp">2.1.6 TOTP [optional]</a></li>
+                        <li><a class="js-scroll-trigger" href="#netrules">2.2 Configure Network Rules</a></li>
+                        <li><a class="js-scroll-trigger" href="#addpolicy">2.3.1 Add a Policy</a></li>
+                        <li><a class="js-scroll-trigger" href="#workflow">2.3.2 Workflow Policy</a></li>
+                        <li><a class="js-scroll-trigger" href="#auth">2.3.2.1.1 Auth methods</a></li>
+                        <li><a class="js-scroll-trigger" href="#conditions">2.3.2.1.2 Constraints</a></li>
+                        <li><a class="js-scroll-trigger" href="#groupres">2.3.2.1.2.1 User Groups Restrictions</a></li>
+                        <li><a class="js-scroll-trigger" href="#daytime">2.3.2.1.2.2 Day and Time Restrictions
+                                [optional]</a></li>
+                        <li><a class="js-scroll-trigger" href="#geolocation">2.3.2.1.2.3 Geo-location</a></li>
+                        <li><a class="js-scroll-trigger" href="#appservice">2.3.2.2 Application And Services</a></li>
+                        <li><a class="js-scroll-trigger" href="#configapp">2.3.2.2.2 Configure Application</a></li>
+                        <li><a class="js-scroll-trigger" href="#accesscontrol">2.3.2.2.3 Application Access Control</a>
+                        </li>
+                        <li><a class="js-scroll-trigger" href="#rdp">2.3.2.2.4 Generate RDP file</a></li>
+                        <li><a class="js-scroll-trigger" href="#configapps">2.3.2.3 Configurations tab</a></li>
+                        <li><a class="js-scroll-trigger" href="#runvalidation">2.3.2.4 Run Workflow Policy
+                                Validation</a></li>
+                        <li><a class="js-scroll-trigger" href="#controllist">2.3.3 Access Control List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">3. Dashboard</a>
+                    <ul aria-expanded="false">
+                        <li><a class="js-scroll-trigger" href="#dashboard">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">4. Reports</a>
+                    <ul aria-expanded="false">
+                        <li><a class="js-scroll-trigger" href="#reports">Reports</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">5. User flow</a>
+                    <ul aria-expanded="false">
+                        <li><a class="js-scroll-trigger" href="#userflow">5.1 SSTP Use Case</a></li>
+                        <li><a class="js-scroll-trigger" href="#rdpuse">5.2 RDP (not SSTP) Use Case</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">6. changelog</a>
+                    <ul aria-expanded="false">
+                        <li><a class="js-scroll-trigger" href="#changelog">Changelog</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.End of Sidebar Holder -->
+        <div class="page-content">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-md-9 content">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="documentation.html">Documentation</a></li>
+                            </ol>
+                        </nav>
+                        <!-- TODO - NAVBAR CATEGORIES END -->
+
+                        <!-- TODO - CONTENT START -->
+                        <!-- /.End of breadcrumb -->
+                        <div class="doc-content">
+                            <h1>1. Getting Started</h1>
+                        
+
+                            <!-- TODO - Installation -->
+                            <h2 id="installation"><span>1.1 Installation <a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+                            <div class="alert alert-primary" role="alert">
+                                <strong>Note — </strong> If truePass SDP Admin Management Console is already installed
+                                on your environment, you can skip this chapter and
+                                go to the configuration.
+                            </div>
+
+                            <h5>To install ZoneZero true-Pass Admin Management Console, do the following:</h5>
+
+                            <p>1. Run 'ZoneZero Hybrid Agent Service' MSI.</p>
+
+                            <p>2. Click the 'Next' button in the installation window.</p>
+
+                            <img src="assets/img/doc/1.png" class="img-fluid" alt="Responsive image">
+
+                            <p>3. Check the ‘I accept the terms in the License Agreement' checkbox and click the 'Next’
+                                button.</p>
+
+                            <img src="assets/img/doc/2.png" class="img-fluid" alt="Responsive image">
+
+                            <p>4. Select the 'Typical' installation type.</p>
+
+                            <img src="assets/img/doc/3.png" class="img-fluid" alt="Responsive image">
+
+
+                            <p>5. Select the 'Typical' installation type.</p>
+
+                            <img src="assets/img/doc/4.png" class="img-fluid" alt="Responsive image">
+
+                            <!-- TODO - Certificate -->
+                            <h2 id="certificates"><span>1.2 Check Certificates <a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+
+                            <div class="alert alert-primary" role="alert">
+                                <strong>Note — </strong> After the installation, certificates are also installed.
+                            </div>
+
+                            <h5>To check certificates, do the following:</h5>
+
+                            <p>1. Click the <strong>'Tools'</strong> tab in the toolbar.</p>
+                            <p>2. Click the <strong>'Certificate Configuration Manager'</strong> button.</p>
+                            <p>On the opened windows, certificates information is displayed.</p>
+
+                            <div class="alert alert-primary" role="alert">
+                                All 3 certificates must be installed OOTB.
+                            </div>
+
+                            <p>For example:</p>
+
+                            <img src="assets/img/doc/5.png" class="img-fluid" alt="Responsive image">
+                            <!-- TODO - ADMIN CONFIGURATION !!!! -->
+                            <h1>2. Admin Management Console Configurations</h1>
+                            <h2 id="services"><span>2.1 Configure Services <a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+                            <h5>To make the system work, you need to configure the following services:</h5>
+                            <ul>
+                                <li>Active Directory</li>
+                                <li>Service Controller</li>
+                                <li>Client Endpoint</li>
+                            </ul>
+                            <div class="alert alert-primary" role="alert">
+                                <strong>Note — </strong> As an option, you can also configure such services as MFA or
+                                TOTP and Syslog.
+                            </div>
+
+                            <h2 id="directory"><span>2.1.1 Configure Active Directory<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+                            <h5>To configure Active Directory, do the following:</h5>
+
+                            <p>1. Open the 'Services Configuration' window.</p>
+                            <p>2. Double-click the 'Active Directory' service.</p>
+                            <img src="assets/img/doc/6.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>3. Click the 'Edit’ button in the opened window.</p>
+                            <img src="assets/img/doc/7.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>4. In the opened window, set Active Directory configurations:</p>
+                            <ul>
+                                <li>
+                                    server IP and port
+                                </li>
+                                <li>
+                                    domain
+                                </li>
+                                <li>
+                                    username (user with administrator permissions)
+                                </li>
+                                <li>
+                                    password
+                                </li>
+                            </ul>
+                            <p>Example of the configuration:</p>
+                            <img src="assets/img/doc/8.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>To check if the configuration is correct, click the <strong>'Test connection'</strong>
+                                button.</p>
+                            <img src="assets/img/doc/9.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>In case of a successful connection, a pop-up with the relevant information appears:</p>
+                            <img src="assets/img/doc/10.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>Click the <strong>'OK'</strong> button to save changes.</p>
+
+
+                            <h2 id="controller"><span>2.1.2 Configure Service Controller<a class="header-link"
+                                        href="#"><i class="ti-link"></i></a></span></h2>
+                            <h5>To configure the Service Controller, do the following:</h5>
+                            <ol>
+                                <li>Open the <strong>'Services Configuration'</strong> window.</li>
+                                <li>Double-click the <strong>'Service Controller Authority API'</strong> service.</li>
+                            </ol>
+                            <img src="assets/img/doc/11.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>3. Set the 'Service URL' value - ZoneZero true-Pass Admin URL in the following format:
+                            </p>
+                            <p><code>https://[customer's subdomain]-admin.packetauth.com:3003/api/login</code> (for
+                                example: https://secure-admin.packetauth.com:3003/api/login).</p>
+                            <p>4. Click the 'OK' button to save the configuration.</p>
+                            <p>Example of the configuration:</p>
+                            <img src="assets/img/doc/12.png" class="img-fluid" alt="Responsive image">
+
+
+                            <h2 id="clientendpoint"><span>2.1.3 Configure Client Endpoint<a class="header-link"
+                                        href="#"><i class="ti-link"></i></a></span></h2>
+                            <h5>To configure the Service Controller, do the following:</h5>
+                            <ol>
+                                <li>Open the <strong>‘Services Configuration’</strong> window.</li>
+                                <li>Double-click the <strong>'Client Endpoint Configuration'</strong> service.</li>
+                            </ol>
+                            <img src="assets/img/doc/13.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>3. Set the 'IPSec URL' value - ZoneZero true-Pass Client URL in the following format:</p>
+                            <p>
+                            <pre
+                                class="snippet"><code class="html"> https://[customer's subdomain].packetauth.com:443</code></pre>
+                            (for example: https://secure.packetauth.com:443).</p>
+                            <p></p>
+                            <p>4. Set <strong>'Virtual Network Route'</strong> value (unique for every environment
+                                value).</p>
+                            <p></p>
+                            <p>5. Set the <strong>‘Remote Desktop Gateway Host Name’</strong> value - ZoneZero truePass
+                                Service URL in the following format:
+                            <pre
+                                class="snippet"><code class="html"> [customer's subdomain]-services.packetauth.com:4430</code></pre>
+                            (for example: secure-services.packetauth.com:4430).</p>
+                            <p>After clicking the <strong>‘Edit'</strong> button near the value, the <strong>'Ping Host’
+                                </strong>pop-up appears where you can ping the provided address:</p>
+                            <img src="assets/img/doc/14.png" class="img-fluid" alt="Responsive image">
+                            <p>6. Click the 'OK' button to save the configuration.</p>
+                            <p>Example of the configuration:</p>
+                            <img src="assets/img/doc/15.png" class="img-fluid" alt="Responsive image">
+
+                            <h2 id="syslog"><span>2.1.4 Configure Syslog [optional]<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+                            <h5>To configure Syslog, do the following:</h5>
+                            <p>1. Open the <strong>‘Services Configuration’</strong> window.</p>
+                            <p>2. Double-click the <strong>'Syslog settings'</strong> service.</p>
+                            <img src="assets/img/doc/16.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>3. Check the 'Enabled’ checkbox in the opened window.</p>
+                            <img src="assets/img/doc/17.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>4. In the opened window, set Syslog configurations:</p>
+                            <li>enter true in the <strong>'Syslog Service Activated'</strong> field</li>
+                            <li>set relevant <strong>‘Syslog Server Address'</strong> and <strong>'Syslog Server Port’</strong> values.</li>
+                            <img src="assets/img/doc/18.png" class="img-fluid" alt="Responsive image">
+                            <p>Click the <strong>'OK'</strong> button to save changes.</p>
+
+
+
+                            <h2 id="mfaoptional"><span>2.1.5 Configure MFA [optional]<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+
+                            <h5>To configure MFA, do the following:</h5>
+                            <p>1. Open the <strong>‘Services Configuration’</strong> window.</p>
+                            <p>2. Double-click the <strong>'Multi-factor Authentication (MFA)</strong> service.</p>
+                            <img src="assets/img/doc/19.png" class="img-fluid" alt="Responsive image">
+                            <p></p>
+                            <p>3. Fill in all required fields.</p>
+                            <p>4. Click the <strong>'Edit'</strong> button to test the connection.</p>
+                            <img src="assets/img/doc/20.png" class="img-fluid" style="margin-bottom:5px"
+                                alt="Responsive image">
+                            <p></p>
+                            <p>5. On the opened window, enter your mobile number and click the <strong>'Test'</strong>
+                                button for testing sending an MFA request.</p>
+                            <img src="assets/img/doc/21.png" class="img-fluid" style="margin-bottom:35px"
+                                alt="Responsive image">
+                            <p>6. Click the <strong>'OK'</strong> button to save changes.</p>
+
+
+
+
+                            <h2 id="totp"><span>2.1.6 Configure TOTP [optional]<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span></h2>
+                            <h5>To configure TOTP, do the following:</h5>
+                            <p>1. Open the <strong>‘Services Configuration’</strong> window.</p>
+                            <p>2. Double-click the <strong>'TOTP'</strong> service.</p>
+                            <img src="assets/img/doc/22.png" class="img-fluid" style="margin-bottom:35px"
+                                alt="Responsive image">
+                            <p>3. Click the 'Edit' button.</p>
+                            <img src="assets/img/doc/23.png" class="img-fluid" style="margin-bottom:35px"
+                                alt="Responsive image">
+                            <p>4. On the opened window, generate the <strong>‘Secret Key’</strong> value and use it for
+                                configuring TOTP Authenticator (like Google
+                                Authenticator etc.).</p>
+                            <img src="assets/img/doc/24.png" class="img-fluid" style="margin-bottom:35px"
+                                alt="Responsive image">
+                            <p>5. Click the 'OK' button to save changes.</p>
+
+
+
+                            <h2 id="netrules"><span>2.2 Configure Network Rules<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span>
+                            </h2>
+                            <h5>To configure network rules, do the following:</h5>
+                            <p>1. Open the <strong>'Network Rules'</strong> window.</p>
+                            <p>2. Double click the existing rule.</p>
+                            <img src="assets/img/doc/25.png" class="img-fluid" style="margin-bottom:35px"
+                                alt="Responsive image">
+                            <p>3. Fill in the following information:</p>
+                            <li><strong>Name</strong> - name in format
+                                <pre
+                                    class="snippet"><code class="html"> [customer's subdomain]-admin.packetauth.com:808] (for example: secure-admin.packetauth.com:808)</code></pre>
+                            </li>
+
+                            <li>
+                                <strong>IP Address</strong> - truePass Admin URL in the following format:
+                                <pre
+                                    class="snippet"><code class="html"> [customer's subdomain]-admin.packetauth.com] (for example: secure-admin.packetauth.com)</code></pre>
+                            </li>
+
+                            <li>
+                                <strong>Port</strong> -
+                                <pre class="snippet"><code class="html"> 888</code></pre>
+                            </li>
+
+                            <li>
+                                <strong>Host Name</strong> - the same value as <strong>'IP Address'</strong> value.
+                            </li>
+
+                            <p>Example of the configuration:</p>
+                            <img src="assets/img/doc/26.png" class="img-fluid" style="margin-bottom:35px">
+
+
+                            <p>4. Configure required services - for example, <strong>‘Remote Desktop Application
+                                    Proxy'</strong>, <strong>'HTTP Service'</strong> or <strong>'SSH Service’</strong>.
+                            </p>
+                            <li>Double-click the service.</li>
+                            <li>Set the IP address of the service.</li>
+                            <div class="alert alert-primary" role="alert">
+                                <strong>Note:</strong> For the 'Remote Desktop Application Proxy' service IP address
+                                should be set to 127.0.0.1
+                            </div>
+                            <p>Example of <strong>'Remote Desktop Application Proxy'</strong> configuration:</p>
+                            <img src="assets/img/doc/27.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>Example of <strong>'HTTP Service'</strong> configuration:</p>
+                            <img src="assets/img/doc/28.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>5. Click <strong>'OK'</strong> to save changes.</p>
+                            <div class="alert alert-primary" role="alert">
+                                If some service isn’t active by default, need to check the <strong>'Service is
+                                    Active'</strong> cheсkbox first.
+                            </div>
+                            <p>Enabling the service:</p>
+                            <img src="assets/img/doc/29.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>After updating service properties, the 'pending network policies and configuration
+                                deployments' warning appears:</p>
+                            <img src="assets/img/doc/30.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>To deploy changes, do the following:</p>
+                            <p>1. Click the <strong>'System'</strong> tab in the toolbar.</p>
+                            <p>2. Click the <strong>'Deploy Configurations'</strong> button.</p>
+                            <img src="assets/img/doc/31.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>3. Confirm deployment.</p>
+                            <img src="assets/img/doc/32.png" class="img-fluid" style="margin-bottom:35px">
+                            <p>After successful deployment, you can go to the <strong>'Dashboard'</strong> and see the
+                                successfull status of the services running:</p>
+                            <img src="assets/img/doc/33.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+                            <h2 id="policies"><span>2.3 Configure Security Policies<a class="header-link" href="#"><i
+                                            class="ti-link"></i></a></span>
+                                <h2 id="addpolicy"><span>2.3.1 Add a Policy<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <h5>Policies allow configuring access to applications and services.</h5>
+                                <p>To add a new policy, do the following:</p>
+                                <p>1. Click the <strong>'Create New Workflow Policy'</strong> link:</p>
+                                <img src="assets/img/doc/34.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>2. Confirm the action in the confirmation pop-up:</p>
+                                <img src="assets/img/doc/35.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. On the <strong>‘Network Access Policy'</strong> window, specify authentication
+                                    and authorization methods for the policy - check
+                                    relevant checkboxes and click the <strong>'OK'</strong> button.</p>
+                                <div class="alert alert-primary" role="alert">
+                                    For more details see chapter <strong>'2.3.2.1.1 Authentication and Authorization
+                                        Methods’</strong>.
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    To use any of these options, it must be configured on the <strong>‘Services
+                                        Configuration’</strong> window. For more details see chapter
+                                    <strong>2.1 Configure Services</strong>.
+                                </div>
+                                <img src="assets/img/doc/36.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>4. On the <strong>'Constraints and Conditions'</strong> window, select required
+                                    Constraints and Conditions and click the <strong>‘Select'</strong> button</p>
+                                <p>There are 2 options for <strong>‘Constraints and Conditions’</strong> -
+                                    <strong>‘User Groups’</strong> and <strong>‘Day and Time Restrictions’</strong>.
+                                </p>
+                                <div class="alert alert-primary" role="alert">
+                                    For more details see chapter <strong>‘2.3.2.1.2 Constraints and
+                                        Conditions’</strong>.
+                                </div>
+                                <img src="assets/img/doc/37.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>5. On the next <strong>'Constraints and Conditions'</strong> window, select the
+                                    service for this policy and click the <strong>'Select'</strong> button.</p>
+                                <img src="assets/img/doc/38.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>6. Configure just selected service and click the <strong>'OK'</strong> button.
+                                </p>
+                                <div class="alert alert-primary" role="alert">
+                                    For more details see chapter <strong>2.3.2.2.2 Configure Application</strong>.
+                                </div>
+                                <img src="assets/img/doc/39.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>7. In the opened <strong>‘Workflow Policy Configuration'</strong> window,
+                                    re-check entered values and click the <strong>'OK’</strong>button.</p>
+                                <div class="alert alert-primary" role="alert">
+                                    For additional policy configuration details see chapter <strong>2.3.2 Workflow
+                                        Policy Configuration</strong>.
+                                </div>
+                                <img src="assets/img/doc/40.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+                                <h2 id="workflow"><span>2.3.2 Workflow Policy Configuration<a class="header-link"
+                                            href="#"><i class="ti-link"></i></a></span></h2>
+                                <p>To update workflow policy configuration, on the <strong>‘Security Policies'</strong>
+                                    window double-click the required policy or
+                                    right-click the policy and select the <strong>'Edit Workflow Policy'</strong>
+                                    option.</p>
+                                <img src="assets/img/doc/41.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+                                <h2 id="auth"><span>2.3.2.1.1 Authentication and Authorization Methods<a
+                                            class="header-link" href="#"><i class="ti-link"></i></a></span></h2>
+                                <h5>To specify authentication and authorization methods for the policy, open the policy
+                                    and click the <strong>'Edit'</strong> button:</h5>
+                                <img src="assets/img/doc/42.png" class="img-fluid" style="margin-bottom:35px">
+
+                                <p>For fast updating the Authentication and Authorization Methods, right-click the
+                                    policy and select the <strong>'Edit
+                                        Authentication and Authorization Methods'</strong> option:</p>
+                                <img src="assets/img/doc/43.png" class="img-fluid" style="margin-bottom:35px">
+
+                                <p>In the opened window you can change Authentication and Authorization Methods.</p>
+                                <p>The following authentication and authorization methods can be enabled:</p>
+
+                                <li>LDAP for Active Directory authentication/authorization (required option)</li>
+                                <li>TOTP for passwordless authentication</li>
+                                <i>Multi-Factor Authorization (MFA)</i>
+                                <img src="assets/img/doc/44.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    To use any of these options, it must be configured on the <strong>'Services
+                                        Confifuration'</strong> window. For more details see <strong>chapter
+                                        2.1 Configure Services</strong>.
+                                </div>
+
+
+
+
+                                <h2 id="conditions"><span>2.3.2.1.2 Constraints and Conditions<a class="header-link"
+                                            href="#"><i class="ti-link"></i></a></span></h2>
+                                <p>To add/edit constraints and conditions for the policy, open the policy and click the
+                                    <strong>'Add'</strong> button:
+                                </p>
+                                <img src="assets/img/doc/45.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>There are 3 options for<strong>‘Constraints and Conditions’</strong>.</p>
+                                <li>User Groups</li>
+                                <li>Day and Time Restrictions</li>
+                                <li>Geographical and Location Restrictions</li>
+
+
+
+
+                                <h2 id="groupres"><span>2.3.2.1.2.1 User Groups Restrictions<a class="header-link"
+                                            href="#"><i class="ti-link"></i></a></span></h2>
+
+                                <p>Here you can configure user groups that will be used while authentication (together
+                                    with enabled authentication and
+                                    authorization methods). To do this, do the following:</p>
+                                <p>1. On the opened <strong>‘Constraints And Conditions'</strong> window, select the
+                                    <strong>'User Groups’</strong> option.
+                                </p>
+                                <img src="assets/img/doc/46.png" class="img-fluid" style="margin-bottom:35px">
+
+                                <p>2. On the opened window, check that the relevant domain is selected from the dropdown
+                                    list and click the <strong>'Add from Active
+                                        Directory'</strong> link.</p>
+                                <p>3. Select the groups that will be used for login via this policy.</p>
+                                <p>4. Save changes.</p>
+
+
+
+
+
+
+
+
+
+
+                                <h2 id="daytime"><span>2.3.2.1.2.2 Day and Time Restrictions [optional]<a
+                                            class="header-link" href="#"><i class="ti-link"></i></a></span></h2>
+
+
+                                <p>Here you can configure the time access policy that will be applied while user
+                                    authentication. To do this, do the
+                                    following:</p>
+
+                                <p>1. On the opened <strong>‘Constraints And Conditions'</strong> window, select the
+                                    <strong>'Day and Time Restrictions’</strong> option.
+                                </p>
+                                <img src="assets/img/doc/47.png" class="img-fluid" style="margin-bottom:35px">
+
+                                <p>2. On the opened window, set one of the following options:</p>
+                                <li>Allow network access during selected time periods</li>
+                                <li>Disallow network access during selected periods</li>
+                                <img src="assets/img/doc/48.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. Check checkboxes near the days that you need to configure for the access time
+                                    policy and set specific time restrictions.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/49.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>4. Also, you can set an expiration date - users will not have access after the
+                                    specified date. To set this, check the
+                                    <strong>'Disallow access after selected time and date expires'</strong> and specify
+                                    the date.
+                                </p>
+                                <img src="assets/img/doc/51.png" class="img-fluid" style="margin-bottom:35px">
+
+                                <p>5. Click the <strong>'OK'</strong> button to save changes.</p>
+
+
+
+
+                                <h2 id="geolocation"><span>2.3.2.1.2.3 Geographical and Location Restrictions
+                                        [optional]<a class="header-link" href="#"><i class="ti-link"></i></a></span>
+                                </h2>
+
+                                <h5>Here you can configure the users' location restrictions that will be applied while
+                                    user authentication. To do this, do
+                                    the following:</h5>
+                                <p>On the opened <strong>‘Constraints And Conditions'</strong> window, select the
+                                    <strong>'Geographical and Location Restrictions’</strong> option.</p>
+                                <img src="assets/img/doc/100.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>2. On the opened window, set one of the following options:</p>
+                                <li>Allow network access for the selected location attributes</li>
+                                <li>Disallow network access for the selected location attributes
+                                </li>
+                                <img src="assets/img/doc/101.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. Check checkboxes near the parameters that you need to configure for the access
+                                    policy - countries, cities, IP addresses.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/102.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>4. Click the <strong>'Edit'</strong> button next to the checked option to set
+                                    parameters.</p>
+                                <img src="assets/img/doc/103.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>5. On the opened pop-up, click the <strong>'Add'</strong> button.
+                                </p>
+                                <img src="assets/img/doc/104.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>6. For the 'Country' option need to select the country from the list, for other
+                                    options - add the required parameter value
+                                    manually.</p>
+                                <p> For example:
+                                </p>
+                                <img src="assets/img/doc/105.png" class="img-fluid" style="margin-bottom:35px">
+                                <img src="assets/img/doc/106.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>7. Click the <strong>'OK'</strong> button to save changes.</p>
+                                <p>Example of configurations:</p>
+                                <img src="assets/img/doc/107.png" class="img-fluid" style="margin-bottom:35px">
+                                <p><strong>'Custom Attributes'</strong> option can set restrictions by any of the
+                                    following options - country, city, IP address or ISP.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/108.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+                                <h2 id="appservice"><span>2.3.2.2 Application And Services<a class="header-link"
+                                            href="#"><i class="ti-link"></i></a></span></h2>
+
+                                <h5>To add an application for accessing via this policy, do the following:</h5>
+
+                                <p>Click the <strong>'Add'</strong> button.</p>
+                                <img src="assets/img/doc/52.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>2. Select an application from the opened list and click the <strong>'Select'</strong>
+                                    button.</p>
+                                <img src="assets/img/doc/53.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. Add service configuration (if the selected service supports it) and click the
+                                    <strong>'OK'</strong> button.
+                                </p>
+                                <img src="assets/img/doc/54.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+
+
+
+
+
+                                <h2 id="configapp"><span>2.3.2.2.2 Configure Application<a class="header-link"
+                                            href="#"><i class="ti-link"></i></a></span></h2>
+                                <p>To update added service configurations, do the following:</p>
+
+                                <p>1. Select any of the added applications.</p>
+                                <p>Click the <strong>'Edit'</strong> button.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/55.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>In the opened window, the following information can be configured:</p>
+                                <li>name</li>
+                                <li>description</li>
+                                <li>MFA enabled or not
+                                </li>
+                                <li>access expiration date
+                                </li>
+                                <li>limited number of RDP logins
+                                </li>
+                                <li>restricted access per device (machine)
+                                </li>
+                                <li>possibility to allow drivers and clipboard redirection
+                                </li>
+                                <img src="assets/img/doc/56.png" class="img-fluid" style="margin-bottom:35px">
+                                <h5>Examples of services configurations:</h5>
+                                <p>1. Access for domain admins from different domains with disabled MFA, disabled access
+                                    expiration date and disabled drivers
+                                    and clipboard redirection:</p>
+                                <img src="assets/img/doc/57.png" class="img-fluid" style="margin-bottom:35px">
+                                <img src="assets/img/doc/58.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>2. Access for specific users with enabled MFA, enabled access expiration date and
+                                    enabled drivers and clipboard
+                                    redirection:</p>
+                                <img src="assets/img/doc/59.png" class="img-fluid" style="margin-bottom:35px">
+                                <img src="assets/img/doc/60.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+
+
+
+
+
+
+
+                                <h2 id="accesscontrol"><span>2.3.2.2.3 Configure Application Access Control<a
+                                            class="header-link" href="#"><i class="ti-link"></i></a></span></h2>
+                                <h5>To configure application access control (specific user access to specific stations),
+                                    do the following:
+                                </h5>
+                                <p>1. Select any of the added applications.
+                                </p>
+                                <p>2. Double-click it or click the <strong>'Edit Application Access Control
+                                        list'</strong> link.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/61.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. In the opened window, click the <strong>‘Add User'</strong> or <strong>'Add
+                                        Group’</strong> button to add a relevant user or user group:
+                                </p>
+                                <img src="assets/img/doc/62.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>Or click the 'Import' button to import domain user and group:
+                                </p>
+                                <img src="assets/img/doc/63.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>4. Click the <strong>'Add Computer'</strong> button to add the relevant RDP station.
+                                </p>
+                                <img src="assets/img/doc/64.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>5. Add the required IP address or hostname and port 3389 in the appeared user block.
+                                </p>
+                                <div class="alert alert-primary" role="alert">
+                                    <strong>Note</strong>: If the port 3389 wasn’t added, it will be added automatically
+                                    while saving.
+                                </div>
+                                <img src="assets/img/doc/65.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>6. Click the <strong>'Add Relationship'</strong> button to link the user and station.
+                                </p>
+                                <img src="assets/img/doc/66.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>7. Click the user and the computer to create a link between them.</p>
+                                <img src="assets/img/doc/67.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>8. Click the <strong>'Apply Changes'</strong> link to save changes.</p>
+                                <img src="assets/img/doc/68.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>9. Close the window.</p>
+                                <h5>After successfull adding a user, it appears in the <strong>'Access Control
+                                        List'</strong>.</h5>
+                                <p>For example:
+                                </p>
+                                <img src="assets/img/doc/69.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    <strong>Note</strong>: HTTP and SSH services don’t work with Access Control for now.
+                                </div>
+
+
+
+
+
+
+                                <h2 id="rdp"><span>2.3.2.2.4 Generate RDP file<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+
+                                <h5>To generate an RDP file for user access, do the following:</h5>
+                                <p>1. Select the relevant user in the <strong>'Access Control List'</strong> section.
+                                </p>
+                                <p>2. Click the <strong>'Generate RDP File'</strong> button.</p>
+                                <img src="assets/img/doc/70.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>3. On the opened <strong>‘true-Pass RDP File Generator’</strong> window, the RDP file
+                                    data is shown and it can be saved using the <strong>‘Generate
+                                        RDP file’</strong> button.</p>
+                                <img src="assets/img/doc/71.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>In this window there are also 2 additional options that can be enabled:</p>
+                                <li><strong>Allow Access to multiple workstations defined under Application Access
+                                        Control list</strong> - in this case, the <strong>'Workstation'</strong>
+                                    field is cleared and the user will have access to the multiple stations which list
+                                    can be viewed by clicking the <strong>'Show
+                                        Access Control list'</strong> button.</li>
+                                <img src="assets/img/doc/72.png" class="img-fluid" style="margin-bottom:35px">
+                                <h4>Example of Access List for the user:</h4>
+                                <img src="assets/img/doc/73.png" class="img-fluid" style="margin-bottom:35px">
+                                <li><strong>Include IPSec Portable Desktop Agent</strong> - in this case after clicking
+                                    the <strong>'Generate RDP File'</strong> button, the IPSec Desktop app
+                                    will be saved together with the RDP file.</li>
+                                <img src="assets/img/doc/74.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    Such RDP file should be generated and provided to all relevant users to access RDP
+                                    service.
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                                <h2 id="configapps"><span>2.3.2.3 Configurations<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <p><strong>'Configurations'</strong> tab contains the list of services used for
+                                    true-Pass authentication and authorization (Active
+                                    Directory, MFA etc.).</p>
+                                <img src="assets/img/doc/75.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>Every service configuration can be updated by clicking the <strong>'Edit'</strong>
+                                    button.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/76.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    List of services is the same as on the <strong>'Services Confifuration'</strong>
+                                    windows. For more details see chapter <strong>2.1 Configure Services</strong>.
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <h2 id="runvalidation"><span>2.3.2.4 Run Workflow Policy Validation<a
+                                            class="header-link" href="#"><i class="ti-link"></i></a></span></h2>
+                                <p><strong>'Run Workflow Policy Validation'</strong> option can be used for testing
+                                    access for the specific user.</p>
+                                <p>To check access for a user, do the following:</p>
+                                <p>1. Click the <strong>'Run Workflow Policy Validation'</strong> link.</p>
+                                <img src="assets/img/doc/77.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>2. Enter username in UPN format.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/78.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    If only 1 Active Directory is configured, username can be entered without UPN format
+                                    - just username.
+                                </div>
+                                <h4>In the opened window, the following information about the user is shown:
+                                </h4>
+                                <li>user’s data from the Active Directory</li>
+                                <li>login user groups
+                                </li>
+                                <li>day and time restrictions</li>
+                                <li>application access control list</li>
+                                <li>geographical and location restrictions</li>
+                                <li>authentication and authorization methods applied to this user while login</li>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/73.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+
+
+
+                                <h2 id="controllist"><span>2.3.3 Access Control List for Workflow Policy (Users & Groups
+                                        List)<a class="header-link" href="#"><i class="ti-link"></i></a></span></h2>
+
+                                <p>After clicking the policy on the <strong>'Security Policies'</strong> window, users
+                                    and groups from the Access Control list appear in the
+                                    bottom part of the window:</p>
+                                <img src="assets/img/doc/79.png" class="img-fluid" style="margin-bottom:35px">
+                                <p>The menu displayed by right-clicking the user/group from the list provides the
+                                    following options:</p>
+                                <img src="assets/img/doc/80.png" class="img-fluid" style="margin-bottom:35px">
+                                <li><strong>Edit Application Access Control</strong> - opens the
+                                    <strong>'true-PassApplication Access Control'</strong> window for editing (for more
+                                    details
+                                    see chapter <strong>2.3.2.2.3 Configure Application Access Control)</strong>
+                                </li>
+                                <img src="assets/img/doc/81.png" class="img-fluid" style="margin-bottom:35px">
+                                <p><strong>Edit Applications Access and Permissions</strong> - opens selected service
+                                    properties window for editing:</p>
+                                <img src="assets/img/doc/82.png" class="img-fluid" style="margin-bottom:35px">
+                                <li><strong>Workflow Policy Validation</strong> - runs a test of access for the selected
+                                    user:</li>
+                                <img src="assets/img/doc/73.png" class="img-fluid" style="margin-bottom:35px">
+                                <li><strong>Generate RDP file</strong> - opens <strong>'true-Pass RDP File
+                                        Generator'</strong> window for generating RDP file for the selected user (for
+                                    more
+                                    details see chapter <strong>2.3.2.2.4 Generate RDP file)</strong>:</li>
+                                <img src="assets/img/doc/83.png" class="img-fluid" style="margin-bottom:35px">
+                                <div class="alert alert-primary" role="alert">
+                                    <strong>Note</strong>: If the ‘Generate RDP file’ menu was selected for a group,
+                                    need to enter the username in UPN format in the opened
+                                    window first:
+                                </div>
+                                <img src="assets/img/doc/84.png" class="img-fluid" style="margin-bottom:35px">
+                                <li><strong>Generate IPSec Desktop Client</strong> - opens the <strong>'true-Pass IPSec
+                                        Portable Desktop Agent'</strong> window for generating IPSec client
+                                    with pre-defined configuration:</li>
+                                <img src="assets/img/doc/85.png" class="img-fluid" style="margin-bottom:35px">
+
+
+
+
+
+
+
+
+
+
+
+
+                                <h2 id="dashboard"><span>3. Dashboard<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <h5>On the Dashboard the following information can be seen:</h5>
+                                <li>List of all services and configurations that are working with the following
+                                    information - host, port and status.</li>
+                                <li>Connected users with detailed information - status, last update, session duration,
+                                    device location.</li>
+
+                                <p>For example:</p>
+                                <img src="assets/img/doc/86.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass dashboard">
+                                <p>Detailed information about the connected user can be opened by double-clicking the
+                                    required user row.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/87.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass dashboard">
+                                <p>Selected user can be dropped by clicking the <strong>‘Drop User'</strong> button on
+                                    the <strong>'Device Summary Report for user’</strong> window.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/88.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass dashboard">
+
+
+
+
+
+                                <h2 id="reports"><span>4. Reports<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <p>Reports provide information about user activities.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/92.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass reports">
+
+
+
+
+
+
+                                <!-- TODO -->
+                                <h2 id="userflow"><span>5. End User Flow<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <h2 id="sstp"><span>5.1 SSTP Use Case<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <p>For starting working, the end user should receive IPSec Desktop Client and RDP file
+                                    for accessing relevant RDP services.</p>
+                                <div class="alert alert-primary" role="alert">
+                                    For details on how to generate IPSec Desktop Client and RDP files see
+                                    <strong>chapter 2.3.2.2.4 Generate RDP file</strong>.
+                                </div>
+                                <p>1. Run received IPSec Desktop Client.</p>
+                                <p>2. Click the <strong>'Connect'</strong> button:</p>
+
+
+                                <p>3. Enter the user’s credentials in the opened pop-up.</p>
+                                <p>For example:</p>
+                                <img src="assets/img/doc/90.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass reports">
+                                <p>4. After entering the correct credentials, <strong>‘Connection Status'</strong>,
+                                    <strong>‘Service Status’</strong> and the <strong>'Application Access
+                                        Status’</strong> will
+                                    be marked as successful, and a list of the available services will be present:
+                                </p>
+                                <img src="assets/img/doc/91.png" class="img-fluid" style="margin-bottom:35px"
+                                    alt="truePass reports">
+                                <p>After successful connecting, the user can run received RDP files to access relevant
+                                    RDP services.
+                                </p>
+
+
+
+
+
+
+
+
+
+                                <h2 id="rdpuse"><span>5.2 RDP (not SSTP) Use Case<a class="header-link" href="#"><i
+                                                class="ti-link"></i></a></span></h2>
+                                <p>For starting working, the end user should receive an RDP file for accessing relevant
+                                    RDP services.</p>
+                                <div class="alert alert-primary" role="alert">
+                                    For details on how to generate RDP files see <strong>chapter 2.3.2.2.4 Generate RDP
+                                        file</strong>.
+                                </div>
+                                <p>Also, for this case need to set the following to the <strong>'hosts'</strong> file
+                                    (its location:</p>
+                                <li>c:\Windows\System32\Drivers\etc\hosts):</li>
+                                <pre><code>[IP address of the ZoneZero true-Pass Admin Console] [customer's subdomain]-services.packetauth.com</code></pre>
+                                <p><strong>For example:</strong> 10.10.10.26 lab-secure-services.packetauth.com</p>
+                                <p>After that, a user can run the received RDP file and get access to the relevant
+                                    stations.</p>
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- TODO - Changelog -->
+                                <h2 id="changelog"><span>Changelog <a class="header-link"
+                                            href="documentation.html#changelog"><i class="ti-link"></i></a></span></h2>
+                                <h6>Aug 04, 2022</h6>
+                                <p>- Release v1.0.1</p>
+                                <ul>
+                                    <li>Initial release</li>
+
+                                </ul>
+
+                        </div>
+                        <!--  /.End of documentation text content -->
+                        <!-- <div class="footer-btn d-flex justify-content-between">
+                            <a href="#" class="btn"><i class="fas fa-arrow-circle-left"></i>Previous</a>
+                            <a href="#" class="btn">Next<i class="fas fa-arrow-circle-right"></i></a>
+                        </div> -->
+                        <!-- /.End of footer button -->
+                    </div>
+
+                </div>
+            </div>
+            <footer class="bg-gray">
+                <div class="main-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="footer-about">
+                                    <div class="footer-logo">
+                                        <img src="assets/img/logo.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>Israel Office
+                                        8 Aba Even BLVD, Herzliyya, Israel </p>
+                                    <a class="email-link" href="mailto:truepass@terrazone.io">For any question</a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-5 col-lg-5">
+
+                                <ul class="social-icon">
+                                    <li><a href="https://twitter.com/TerraZone_Ltd"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/terrazoneltd/"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/terrazone/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul><!-- /.End of footer social icon -->
+                            </div>
+                        </div>
+                        <div class="sub-footer">
+                            <div class="row align-items-center ">
+                                <div class="col-md-7 order-md-first order-last">
+                                    <div class="Copyright-text">
+                                        <p class="m-0">Copyright © 2022 <a href="https://www.terrazone.io/"
+                                                target="_blank">truePass
+                                                by TerraZone </a>. All
+                                            rights reserved. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <ul class="footer-menu">
+                                        <li><a href="#">Terms of use </a></li>
+
+                                        <li><a href="mailto:support@terrazone.io">contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.End of sub footer -->
+                    </div>
+                </div>
+            </footer><!-- /.End of footer -->
+        </div><!-- /.Page Content Holder -->
+        <div class="overlay"></div>
+    </div><!-- /.End of loader -->
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/pace.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.dd.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/highlight.pack.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
